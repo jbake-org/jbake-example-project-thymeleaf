@@ -1,0 +1,2 @@
+jbake-example-project-thymeleaf
+===============================
