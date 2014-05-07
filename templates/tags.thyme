@@ -1,0 +1,30 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head th:replace="header.thyme::head"/>
+	<body>
+	<div th:replace="menu.thyme::menu"/>
+	
+	<div class="page-header">
+		<h1 th:text='Tag: ${tag}'>tag</h1>
+	</div>
+	
+	<!--<ul>-->
+		<div th:each="post : ${tag_posts}" th:with='last_month=null' th:remove='tag'>
+			<div th:if='${last_month==null}'>
+			<h4 th:text='${#dates.format(post.date,"MMMM yyyy")}'>date</h4>
+			<ul>
+			</div>
+			
+			<div th:if='${(last_month!=null) && (last_month!=#dates.format(post.date,"MMMM yyyy")}'>
+			</ul>
+			<h4 th:text='${#dates.format(post.date,"MMMM yyyy")}'>date</h4>
+			</div>
+		
+			<li th:text='${#dates.format(post.date, "dd")}'>date <a th:text='${post.title}' th:href='${post.uri}' href='link'>link</a></li>
+			<span th:remove='all' th:with='last_month = ${#dates.format(post.date,"MMMM yyyy")}'/>
+		</div>
+	</ul>
+	<div th:replace="footer.thyme::footer"></div>
+    </body>
+</html>
