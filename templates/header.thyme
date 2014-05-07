@@ -11,8 +11,6 @@
 	    <meta name="generator" content="JBake"/>
 	
 	    <!-- Le styles -->
-	    <!--<link th:href="((${content.rootpath}!=null})?${content.rootpath}:' ')+'css/bootstrap.min.css'" rel="stylesheet"/>-->
-	    <!--<link th:with="rootpath=(${content.rootpath != null} ? 'not null' : 'null')" th:href="${rootpath}" rel="stylesheet"/>-->
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : ${config.site_context})" th:href="${rootpath}+ 'css/bootstrap.min.css'" rel="stylesheet"/>
 	    <link href="/css/asciidoctor.css" rel="stylesheet"/>
 	    <link href="/css/base.css" rel="stylesheet"/>
