@@ -18,7 +18,7 @@
 				
 			<hr />
 			
-			<p>Older posts are available in the <a th:href='${"/"+config.archive_file}' href='href'>archive</a>.</p>
+			<p>Older posts are available in the <a th:href='${config.archive_file}' href='href'>archive</a>.</p>
 		</div>
 	</div>
 	
