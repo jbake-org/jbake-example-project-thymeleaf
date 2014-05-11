@@ -13,11 +13,11 @@
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/bootstrap.min.css'" rel="stylesheet"/>
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/asciidoctor.css'" rel="stylesheet"/>
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/base.css'" rel="stylesheet"/>
-	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/bootstrap-responsive.min.css'" rel="stylesheet"/>
+	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/prettify.css'" rel="stylesheet"/>
 	
 	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	    <!--[if lt IE 9]>
-	      <script src="/js/html5shiv.js"></script>
+	      <script src="/js/html5shiv.min.js"></script>
 	    <![endif]-->
 	
 	    <!-- Fav and touch icons -->
