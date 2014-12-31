@@ -8,7 +8,7 @@
 		<div class="container">
 	
 			<div class="page-header">
-				<h1 th:inline='text'>Tag: [[${tag}]]</h1>
+				<h1 th:text="'Tag: '+${tag}">tag</h1>
 			</div>
 		
 			<div th:each="post : ${tag_posts}" th:with='last_month=null' th:remove='tag'>
