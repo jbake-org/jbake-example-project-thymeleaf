@@ -7,7 +7,7 @@
     
 		    <div id="footer">
 		      <div class="container">
-		        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake <span th:text='${version}'>version</span></a></p>
+		        <p class="muted credit">&copy; 2016 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.3.6</a> | Baked with <a href="http://jbake.org">JBake <span th:text='${version}'>version</span></a></p>
 		      </div>
 		    </div>
 	    
