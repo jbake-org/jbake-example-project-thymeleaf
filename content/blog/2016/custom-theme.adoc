@@ -1,0 +1,50 @@
+= Custom Theme 
+Uma Bala
+2016-03-12
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog, bootstrap
+:idprefix:
+:thyme: united
+
+=== Implementing custome theme
+
+The best part of using boostrap is to get apply custom themes. Number of custome themes available http://bootswatch.com/[like bootswatch] on the web.
+
+=== Setup Theme
+
+Copy the custom theme under css folder in assets. For example `united` theme is used on this post.
+```
+assets/css/themes/themename
+
+example:
+assets/css/themes/united
+```
+
+=== Update Template
+
+Update the header template file as necessary.
+```
+<link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : ''),thyme=(${content.thyme != null} ? ${rootpath}+'css/themes/'+${content.thyme} : ${rootpath}+'css')" th:href="${thyme}+'/bootstrap.min.css'" rel="stylesheet"/>
+
+```
+
+===Using custom theme
+
+Add custom header `:thyme: themename` to post or page. Header for this post is given below.
+
+```
+= Custom Theme 
+Uma Bala
+2016-03-12
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog, bootstrap
+:idprefix:
+:thyme: united
+```
+
+=== Bake and Serve
+
+It's all set and ready. Just bake and serve `jbake -b -s`.
+
