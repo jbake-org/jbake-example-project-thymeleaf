@@ -10,7 +10,7 @@
 	    <meta name="generator" content="JBake"/>
 	
 	    <!-- Le styles -->
-	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/bootstrap.min.css'" rel="stylesheet"/>
+	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : ''),thyme=(${content.thyme != null} ? ${rootpath}+'css/themes/'+${content.thyme} : ${rootpath}+'css')" th:href="${thyme}+'/bootstrap.min.css'" rel="stylesheet"/>
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/asciidoctor.css'" rel="stylesheet"/>
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/base.css'" rel="stylesheet"/>
 	    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'css/prettify.css'" rel="stylesheet"/>
