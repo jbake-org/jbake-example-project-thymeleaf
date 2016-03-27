@@ -9,7 +9,7 @@ Uma Bala
 
 === Implementing custome theme
 
-The best part of using boostrap is to get apply custom themes. Number of custome themes available http://bootswatch.com/[like bootswatch] on the web.
+The best part of using boostrap is to get apply custom themes. Number of custom themes available http://bootswatch.com/[like bootswatch] on the web.
 
 === Setup Theme
 
@@ -29,7 +29,7 @@ Update the header template file as necessary.
 
 ```
 
-===Using custom theme
+=== Using custom theme
 
 Add custom header `:thyme: themename` to post or page. Header for this post is given below.
 
